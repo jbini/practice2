@@ -1,4 +1,5 @@
 .practice2 {
+  position: relative;
   width: 100vw;
   height: 100vh;
   min-width: 500px;
@@ -7,5 +8,142 @@
   max-height: 100vh;
   background-color: #e5f0f5;
   overflow: hidden;
-  position: relative;
+}
+
+/* 화면1 */
+.location1-container {
+  position: absolute;
+  display: block;
+  /* background-color: #f5d7ee; */
+  width: 100vw;
+  height: 500px;
+  top: 300px;
+  left: 0;
+}
+.location1-container input {
+  display: none;
+}
+
+.location1-slide {
+  position: absolute;
+  display: block;
+  background-color: #ffeffb;
+  width: 400vw;
+  height: 500px;
+  top: 0;
+  left: 0;
+}
+
+#slide-btn1:checked ~ .location1-slide {
+  transform: translate(0vw);
+  background-color: #d0f0ff;
+  transition: 2s;
+}
+#slide-btn2:checked ~ .location1-slide {
+  transform: translate(-100vw);
+  background-color: #f7cb6d;
+  transition: 2s;
+}
+#slide-btn3:checked ~ .location1-slide {
+  transform: translate(-200vw);
+  background-color: #040f27;
+  transition: 2s;
+}
+#slide-btn4:checked ~ .location1-slide {
+  transform: translate(-300vw);
+  background-color: #5b667e;
+  transition: 2s;
+}
+
+@keyframes arrowhide {
+  0% {
+    opacity: 0%;
+  }
+  80% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes arrowhide2 {
+  0% {
+    opacity: 0%;
+  }
+  80% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+#slide-btn1:checked ~ .location1-slide label {
+  animation: arrowhide 3s ease;
+}
+#slide-btn2:checked ~ .location1-slide label {
+  animation: arrowhide2 3s ease;
+}
+#slide-btn3:checked ~ .location1-slide label {
+  animation: arrowhide 3s ease;
+}
+#slide-btn4:checked ~ .location1-slide label {
+  animation: arrowhide2 3s ease;
+}
+
+
+.location1-slide .left {
+  position: absolute;
+  display: block;
+  background: url('img/left.jpg') center center / 100% no-repeat;
+  width: 100px;
+  height: 100px;
+  top: 100px;
+  left: 30vw;
+}
+.location1-slide .right {
+  position: absolute;
+  display: block;
+  background: url('img/right.jpg') center center / 100% no-repeat;
+  width: 100px;
+  height: 100px;
+  top: 100px;
+  right: 30vw;
+}
+
+
+.location1-slide1-box {
+  position: absolute;
+  display: block;
+  /* background-color: rgb(37, 238, 80); */
+  width: 100vw;
+  height: 300px;
+  top: 100px;
+  left: 0;
+}
+.location1-slide2-box {
+  position: absolute;
+  display: block;
+  /* background-color: rgb(211, 41, 41); */
+  width: 100vw;
+  height: 300px;
+  top: 100px;
+  left: 100vw
+}
+.location1-slide3-box {
+  position: absolute;
+  display: block;
+  /* background-color: rgb(35, 35, 245); */
+  width: 100vw;
+  height: 300px;
+  top: 100px;
+  left: 200vw;
+}
+.location1-slide4-box {
+  position: absolute;
+  display: block;
+  /* background-color: rgb(245, 241, 35); */
+  width: 100vw;
+  height: 300px;
+  top: 100px;
+  left: 300vw;
 }
