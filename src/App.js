@@ -5,14 +5,31 @@ import penguinLeft from'./img/penguinL.png';
 import penguinsound from './sound/penguin.mp3';
 import penguinjoin from './sound/join.mp3';
 import bearsound from './sound/bear.mp3';
+import whalesound from './sound/whalesound.mp3';
 import $ from 'jquery';
 
 let penguinR = penguinRight
 let penguinL = penguinLeft
 let penguinS = new Audio(penguinsound)
 let penguinJ = new Audio(penguinjoin)
-let BearS = new Audio(bearsound)
+let bearS = new Audio(bearsound)
+let whaleS = new Audio(whalesound)
 
+export function runnerW(){
+  setTimeout(function(){ 
+    whaleS.play();
+  }, 2600);
+};
+export function runnerB(){
+  setTimeout(function(){ 
+    bearS.play();
+  }, 1800);
+};
+export function runnerJ(){
+  setTimeout(function(){ 
+    penguinJ.play();
+  }, 2500);
+};
 export function runnerL(){
   $('#location1-runnerR').hide();
   $('#location1-runnerL').show();
@@ -23,16 +40,8 @@ export function runnerR(){
   $('#location1-runnerL').hide();
   penguinS.play();
 };
-export function runnerJ(){
-  setTimeout(function(){ 
-    penguinJ.play();
-  }, 2300);
-};
-export function runnerB(){
-  setTimeout(function(){ 
-    BearS.play();
-  }, 1800);
-};
+
+
 
 
 
@@ -43,7 +52,7 @@ function App() {
       <div className='location1-container'>
 
         <input type='radio' name='location1-slide-radio' id='slide-btn1'></input>
-        <input type='radio' name='location1-slide-radio' id='slide-btn2'></input>
+        <input type='radio' name='location1-slide-radio' id='slide-btn2' onChange={runnerW}></input>
         <input type='radio' name='location1-slide-radio' id='slide-btn3' onChange={runnerB}></input>
         <input type='radio' name='location1-slide-radio' id='slide-btn4' onChange={runnerJ}></input>
 
@@ -56,6 +65,9 @@ function App() {
 
         <div className='location1-slide'>
 
+          <div className='location1-slide-sun'></div>
+          <div className='location1-slide-sun2'></div>
+
           <div className='location1-slide-ground'></div>
 
           <div className='location1-slide-cloud1'></div>
@@ -66,24 +78,56 @@ function App() {
           <div className='location1-slide-cloud6'></div>
           <div className='location1-slide-cloud7'></div>
 
+          {/* 1페이지 장식 */}
           <div className='location1-slide-iceberg1'></div>
           <div className='location1-slide-iceberg2'></div>
           <div className='location1-slide-iceberg4'></div>
+          <div className='location1-slide-eskimo'></div>
 
+          {/* 2페이지 장식 */}
           <div className='location1-slide-igloo'></div>
           <div className='location1-slide-sign'></div>
+          <div className='location1-slide-killerwhale'></div>
           <div className='location1-slide-iceberg5'></div>
           <div className='location1-slide-iceberg6'></div>
+          <div className='location1-slide-iceberg7'></div>
+          <div className='location1-slide-seal'></div>
+          
 
+          {/* 3페이지 장식 */}
+          <div className='location1-slide-iceberg8'></div>
+          <div className='location1-slide-iceberg9'></div>
+          <div className='location1-slide-iceberg10'></div>
+          <div className='location1-slide-dolphin1'></div>
+          <div className='location1-slide-dolphin2'></div>
+          <div className='location1-slide-dolphin3'></div>
           <div className='location1-slide-polarbear'></div>
+          <div className='location1-slide-star1' id='location1-slide-stars'></div>
+          <div className='location1-slide-star2' id='location1-slide-stars'></div>
+          <div className='location1-slide-star3' id='location1-slide-stars'></div>
+          <div className='location1-slide-star4' id='location1-slide-stars'></div>
+          <div className='location1-slide-star5' id='location1-slide-stars'></div>
+          <div className='location1-slide-star6' id='location1-slide-stars'></div>
+          <div className='location1-slide-star7' id='location1-slide-stars'></div>
+          <div className='location1-slide-star8' id='location1-slide-stars'></div>
+          <div className='location1-slide-star9' id='location1-slide-stars'></div>
+          <div className='location1-slide-star10' id='location1-slide-stars'></div>
+          <div className='location1-slide-star11' id='location1-slide-stars'></div>
+          <div className='location1-slide-star12' id='location1-slide-stars'></div>
+          <div className='location1-slide-star13' id='location1-slide-stars'></div>
+          <div className='location1-slide-star14' id='location1-slide-stars'></div>
+          <div className='location1-slide-star15' id='location1-slide-stars'></div>
+          <div className='location1-slide-star16' id='location1-slide-stars'></div>
+          <div className='location1-slide-star17' id='location1-slide-stars'></div>
+          <div className='location1-slide-star18' id='location1-slide-stars'></div>
+          <div className='location1-slide-star19' id='location1-slide-stars'></div>
 
+          {/* 4페이지 장식 */}
           <div className='location1-slide-penguin2'></div>
           <div className='location1-slide-penguin3'></div>
           <div className='location1-slide-iceberg7'></div>
 
           <div className='location1-slide1-box'>
-            {/* <label for='slide-btn4' className='left'></label> */}
-            
             <label for='slide-btn2' className='right' onClick={runnerR} id="runner-rotateR"></label>
           </div>
 
