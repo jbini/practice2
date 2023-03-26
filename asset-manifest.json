@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/practice2/static/css/main.bdb78c03.css",
-    "main.js": "/practice2/static/js/main.4912e6b0.js",
+    "main.css": "/practice2/static/css/main.719037d0.css",
+    "main.js": "/practice2/static/js/main.9f558a7b.js",
     "static/js/787.3c56cd33.chunk.js": "/practice2/static/js/787.3c56cd33.chunk.js",
     "static/media/sun.png": "/practice2/static/media/sun.baee988dfcb58e4791bf.png",
     "static/media/polarbear.png": "/practice2/static/media/polarbear.9acf56ab8a50ec725b30.png",
@@ -11,6 +11,7 @@
     "static/media/penguin3.png": "/practice2/static/media/penguin3.89055966a3ae428465a6.png",
     "static/media/eskimo.png": "/practice2/static/media/eskimo.fdc28c4fc9d638bd5e3a.png",
     "static/media/killerwhale.png": "/practice2/static/media/killerwhale.3df34dbda527318fe028.png",
+    "static/media/wave1.png": "/practice2/static/media/wave1.ed82ea7685e740d2ff0c.png",
     "static/media/seal.png": "/practice2/static/media/seal.57b874b23721ffea8aa3.png",
     "static/media/join.mp3": "/practice2/static/media/join.85207ac3e535b368645f.mp3",
     "static/media/bear.mp3": "/practice2/static/media/bear.588894f537e0d5ef80aa.mp3",
@@ -21,12 +22,12 @@
     "static/media/iceground1.png": "/practice2/static/media/iceground1.be7f40922bcf597ace0a.png",
     "static/media/penguin.mp3": "/practice2/static/media/penguin.74e2c2e2f966ba750988.mp3",
     "index.html": "/practice2/index.html",
-    "main.bdb78c03.css.map": "/practice2/static/css/main.bdb78c03.css.map",
-    "main.4912e6b0.js.map": "/practice2/static/js/main.4912e6b0.js.map",
+    "main.719037d0.css.map": "/practice2/static/css/main.719037d0.css.map",
+    "main.9f558a7b.js.map": "/practice2/static/js/main.9f558a7b.js.map",
     "787.3c56cd33.chunk.js.map": "/practice2/static/js/787.3c56cd33.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bdb78c03.css",
-    "static/js/main.4912e6b0.js"
+    "static/css/main.719037d0.css",
+    "static/js/main.9f558a7b.js"
   ]
 }
