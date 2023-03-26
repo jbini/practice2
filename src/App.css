@@ -452,6 +452,54 @@
   transition-delay: 2.4s;
   bottom: -350px;
 }
+.location1-slide-wave1 {
+  position: absolute;
+  display: block;
+  background: url('img/wave1.png') center center / 100% no-repeat;
+  width: 550px;
+  height: 450px;
+  bottom: -300px;
+  left: 258vw;
+  z-index: 1;
+}
+#slide-btn2:checked ~ .location1-slide .location1-slide-wave1 {
+  animation: wavecrush1 3s 2.8s ease;
+}
+@keyframes wavecrush1 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-50px, -370px);
+  }
+  100% {
+    transform: translate(-100px, 100px);
+  }
+}
+.location1-slide-wave2 {
+  position: absolute;
+  display: block;
+  background: url('img/wave1.png') center center / 100% no-repeat;
+  width: 450px;
+  height: 380px;
+  bottom: -300px;
+  left: 279vw;
+  z-index: 2;
+}
+#slide-btn2:checked ~ .location1-slide .location1-slide-wave2 {
+  animation: wavecrush2 3s 2.8s ease;
+}
+@keyframes wavecrush2 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(50px, -370px);
+  }
+  100% {
+    transform: translate(100px, 100px);
+  }
+}
 
 .location1-slide-iceberg5 {
   position: absolute;

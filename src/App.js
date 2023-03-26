@@ -92,6 +92,8 @@ function App() {
           <div className='location1-slide-iceberg6'></div>
           <div className='location1-slide-iceberg7'></div>
           <div className='location1-slide-seal'></div>
+          <div className='location1-slide-wave1'></div>
+          <div className='location1-slide-wave2'></div>
           
 
           {/* 3페이지 장식 */}
