@@ -1028,7 +1028,7 @@ h6 {
   height: 70px;
   top: 320px;
   left: calc(43vw - 90px);
-  opacity: 80%;
+  opacity: 70%;
   text-align: center;
   cursor: pointer;
   z-index: 6;
@@ -1042,7 +1042,7 @@ h6 {
   height: 70px;
   top: 320px;
   right: calc(43vw - 90px);
-  opacity: 80%;
+  opacity: 70%;
   text-align: center;
   cursor: pointer;
   z-index: 6;
@@ -1059,7 +1059,7 @@ h6 {
   height: 100px;
   top: 100px;
   right: calc(23vw - 90px);
-  opacity: 80%;
+  opacity: 90%;
   text-align: center;
   z-index: 6;
 }
@@ -1072,14 +1072,14 @@ h6 {
   height: 100px;
   top: 100px;
   right: calc(23vw - 90px);
-  opacity: 80%;
+  opacity: 90%;
   text-align: center;
   z-index: 6;
 }
 
 
 
-/* 체크박스 효과 */
+/* 체크박스 슬라이드 효과 */
 #slide-btn1:checked ~ .location1-slide {
   transform: translate(0vw);
   background-color: #fff2fc;
@@ -1111,6 +1111,90 @@ h6 {
   transition: 3.5s;
 }
 
+
+/* 체크박스 오브젝트 효과 */
+#slide-btn1:checked ~ .location1-slide label {
+  animation: arrowshow 3.5s ease;
+}
+
+#slide-btn2:checked ~ .location1-slide .left {
+  animation: arrowshow2 3.5s ease;
+}
+#slide-btn2:checked ~ .location1-slide .right {
+  display: none;
+}
+#slide-btn2:checked ~ .location1-slide #runner-answer {
+  animation: answershow 5.5s ease;
+}
+#slide-btn2:checked ~ .location1-slide #runner-answer:hover {
+  opacity: 100%;
+}
+
+#slide-btn2-1:checked ~ .location1-slide .answer-1 {
+  animation: answerhide1 4s ease;
+  transition-delay: 4s;
+  top: -300px;
+  opacity: 0;
+  cursor: default;
+}
+#slide-btn2-1:checked ~ .location1-slide .answer-whale1 {
+  animation: answershow 4s ease;
+  display: block;
+}
+#slide-btn2-1:checked ~ .location1-slide .location1-slide-killerwhale {
+  transition-delay: 5s;
+  left: 248vw;
+  bottom: -420px;
+}
+#slide-btn2-1:checked ~ .background-red {
+  animation: arrowshow 6.7s ease;
+  display: block;
+}
+#slide-btn2-1:checked ~ .location1-slide .answer-2 {
+  display: none;
+}
+#slide-btn2-1:checked ~ .location1-slide .left {
+  display: none;
+}
+#slide-btn2-1:checked ~ .location1-slide .right {
+  display: none;
+}
+
+#slide-btn2-2:checked ~ .location1-slide .answer-2 {
+  animation: answerhide2 4s ease;
+  transition-delay: 4s;
+  top: -300px;
+  opacity: 0;
+  cursor: default;
+}
+#slide-btn2-2:checked ~ .location1-slide .answer-whale2 {
+  animation: answershow 4s ease;
+  display: block;
+}
+#slide-btn2-2:checked ~ .location1-slide .location1-slide-killerwhale {
+  bottom: -350px;
+}
+#slide-btn2-2:checked ~ .location1-slide .answer-1 {
+  display: none;
+}
+#slide-btn2-2:checked ~ .location1-slide .left {
+  animation: arrowshow2 6s ease;
+  display: block;
+}
+#slide-btn2-2:checked ~ .location1-slide .right {
+  animation: arrowshow2 6s ease;
+  display: block;
+}
+
+
+#slide-btn3:checked ~ .location1-slide label {
+  animation: arrowshow 3.5s ease;
+}
+#slide-btn4:checked ~ .location1-slide label {
+  animation: arrowshow2 4s ease;
+}
+
+
 @keyframes arrowshow {
   0% {
     opacity: 0%;
@@ -1141,75 +1225,32 @@ h6 {
     opacity: 0%;
   }
   100% {
-    opacity: 80%;
+    opacity: 70%;
   }
 }
 @keyframes answerhide1 {
   0% {
-    opacity: 80%;
+    opacity: 100%;
   }
   60% {
     left: calc(46vw - 30px);
-    opacity: 80%;
+    opacity: 100%;
   }
   100% {
     left: calc(46vw - 30px);
     opacity: 0%;
   }
 }
-#slide-btn1:checked ~ .location1-slide label {
-  animation: arrowshow 3.5s ease;
+@keyframes answerhide2 {
+  0% {
+    opacity: 100%;
+  }
+  60% {
+    right: calc(46vw - 30px);
+    opacity: 100%;
+  }
+  100% {
+    right: calc(46vw - 30px);
+    opacity: 0%;
+  }
 }
-
-#slide-btn2:checked ~ .location1-slide .left {
-  animation: arrowshow2 3.5s ease;
-}
-#slide-btn2:checked ~ .location1-slide .right {
-  display: none;
-}
-#slide-btn2:checked ~ .location1-slide .answer-1 {
-  animation: answershow 5.5s ease;
-}
-#slide-btn2:checked ~ .location1-slide .answer-2 {
-  animation: answershow 5.5s ease;
-}
-
-#slide-btn2-1:checked ~ .location1-slide .answer-1 {
-  animation: answerhide1 4s ease;
-  transition-delay: 4s;
-  top: -300px;
-  opacity: 0;
-  cursor: default;
-}
-#slide-btn2-1:checked ~ .location1-slide .answer-whale1 {
-  animation: answershow 4s ease;
-  display: block;
-}
-
-#slide-btn2-1:checked ~ .location1-slide .location1-slide-killerwhale {
-  transition-delay: 5s;
-  left: 248vw;
-  bottom: -420px;
-}
-#slide-btn2-1:checked ~ .background-red {
-  animation: arrowshow 6.7s ease;
-  display: block;
-}
-#slide-btn2-1:checked ~ .location1-slide .answer-2 {
-  display: none;
-}
-#slide-btn2-1:checked ~ .location1-slide .left {
-  display: none;
-}
-#slide-btn2-1:checked ~ .location1-slide .right {
-  display: none;
-}
-
-
-#slide-btn3:checked ~ .location1-slide label {
-  animation: arrowshow 3.5s ease;
-}
-#slide-btn4:checked ~ .location1-slide label {
-  animation: arrowshow2 4s ease;
-}
-

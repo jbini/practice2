@@ -155,10 +155,10 @@ function App() {
           <div className='location1-slide2-box'>
             <label for='slide-btn1' className='left' onClick={runnerL} id="runner-rotateL"></label>
 
-            <label for='slide-btn2-1' className='answer-1' onClick={runnerA}>
+            <label for='slide-btn2-1' className='answer-1' onClick={runnerA} id="runner-answer">
               <h4>get out of here you monster!</h4>
             </label>
-            <label for='slide-btn2-2' className='answer-2' onClick={runnerA}>
+            <label for='slide-btn2-2' className='answer-2' onClick={runnerA} id="runner-answer">
               <h4>you have pretty teeth</h4>
             </label>
             <div className='answer-whale1'><h5>I HATE YOU TOO</h5></div>
