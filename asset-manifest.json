@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/practice2/static/css/main.8d8d158a.css",
-    "main.js": "/practice2/static/js/main.1b1bc335.js",
+    "main.css": "/practice2/static/css/main.c3848f79.css",
+    "main.js": "/practice2/static/js/main.079dbba3.js",
     "static/js/787.3c56cd33.chunk.js": "/practice2/static/js/787.3c56cd33.chunk.js",
     "static/media/sun.png": "/practice2/static/media/sun.baee988dfcb58e4791bf.png",
     "static/media/polarbear.png": "/practice2/static/media/polarbear.9acf56ab8a50ec725b30.png",
@@ -24,12 +24,12 @@
     "static/media/iceground1.png": "/practice2/static/media/iceground1.be7f40922bcf597ace0a.png",
     "static/media/penguin.mp3": "/practice2/static/media/penguin.74e2c2e2f966ba750988.mp3",
     "index.html": "/practice2/index.html",
-    "main.8d8d158a.css.map": "/practice2/static/css/main.8d8d158a.css.map",
-    "main.1b1bc335.js.map": "/practice2/static/js/main.1b1bc335.js.map",
+    "main.c3848f79.css.map": "/practice2/static/css/main.c3848f79.css.map",
+    "main.079dbba3.js.map": "/practice2/static/js/main.079dbba3.js.map",
     "787.3c56cd33.chunk.js.map": "/practice2/static/js/787.3c56cd33.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d8d158a.css",
-    "static/js/main.1b1bc335.js"
+    "static/css/main.c3848f79.css",
+    "static/js/main.079dbba3.js"
   ]
 }
