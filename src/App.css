@@ -10,6 +10,20 @@
   overflow: scroll;
 }
 
+h4 {
+  margin-top: calc(0.6vw + 6px);
+  font-size: calc(0.4vw + 5px);
+  color: #1b1b1b;
+}
+h5 {
+  margin-top: calc(0.6vw + 6px);
+  font-size: calc(1.3vw + 5px);
+}
+h6 {
+  margin-top: calc(0.8vw + 6px);
+  font-size: calc(0.8vw + 5px);
+}
+
 /* 화면1 */
 .location1-container {
   position: absolute;
@@ -23,6 +37,15 @@
 }
 .location1-container input {
   display: none;
+}
+
+.background-red {
+  position: absolute;
+  display: none;
+  background-color: #ff0000;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
 }
 
 /* 중앙 피사체 */
@@ -79,6 +102,12 @@
   z-index: 0;
 }
 #slide-btn2:checked ~ .location1-slide .location1-slide-sun {
+  transform: translate(189vw);
+}
+#slide-btn2-1:checked ~ .location1-slide .location1-slide-sun {
+  transform: translate(189vw);
+}
+#slide-btn2-2:checked ~ .location1-slide .location1-slide-sun {
   transform: translate(189vw);
 }
 #slide-btn3:checked ~ .location1-slide .location1-slide-sun {
@@ -364,7 +393,7 @@
 }
 .location1-slide-iceberg3 {
   position: absolute;
-  display: block;
+  display: none;
   background: url('img/iceberg1.png') center center / 100% no-repeat;
   width: 1200px;
   height: 900px;
@@ -373,7 +402,21 @@
   transition: 3s;
   z-index: 6;
 }
+#slide-btn1:checked ~ .location1-slide-iceberg3 {
+  display: block;
+}
 #slide-btn2:checked ~ .location1-slide-iceberg3 {
+  display: block;
+  transform: translate(-200vw);
+  transition: 3s;
+}
+#slide-btn2-1:checked ~ .location1-slide-iceberg3 {
+  display: block;
+  transform: translate(-200vw);
+  transition: 3s;
+}
+#slide-btn2-2:checked ~ .location1-slide-iceberg3 {
+  display: block;
   transform: translate(-200vw);
   transition: 3s;
 }
@@ -911,63 +954,6 @@
   z-index: 4;
 }
 
-/* 체크박스 효과 */
-#slide-btn1:checked ~ .location1-slide {
-  transform: translate(0vw);
-  background-color: #fff2fc;
-  transition: 3s;
-}
-#slide-btn2:checked ~ .location1-slide {
-  transform: translate(-200vw);
-  background-color: #ccffe1;
-  transition: 3s;
-}
-#slide-btn3:checked ~ .location1-slide {
-  transform: translate(-400vw);
-  background-color: #292b31;
-  transition: 3s;
-}
-#slide-btn4:checked ~ .location1-slide {
-  transform: translate(-600vw);
-  background-color: #fff2d6;
-  transition: 3.5s;
-}
-
-@keyframes arrowhide {
-  0% {
-    opacity: 0%;
-  }
-  80% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-@keyframes arrowhide2 {
-  0% {
-    opacity: 0%;
-  }
-  80% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-#slide-btn1:checked ~ .location1-slide label {
-  animation: arrowhide 3.5s ease;
-}
-#slide-btn2:checked ~ .location1-slide label {
-  animation: arrowhide2 3.5s ease;
-}
-#slide-btn3:checked ~ .location1-slide label {
-  animation: arrowhide 3.5s ease;
-}
-#slide-btn4:checked ~ .location1-slide label {
-  animation: arrowhide2 4s ease;
-}
-
 
 /* 방향 표시 버튼 */
 .location1-slide .left {
@@ -1030,3 +1016,200 @@
   top: 100px;
   left: 600vw;
 }
+
+
+/* 대답 버튼 */
+.answer-1 {
+  position: absolute;
+  display: block;
+  background-color: #faffff;
+  border-radius: 10px;
+  width: calc(8vw + 60px);
+  height: 70px;
+  top: 320px;
+  left: calc(43vw - 90px);
+  opacity: 80%;
+  text-align: center;
+  cursor: pointer;
+  z-index: 6;
+}
+.answer-2 {
+  position: absolute;
+  display: block;
+  background-color: #faffff;
+  border-radius: 10px;
+  width: calc(8vw + 60px);
+  height: 70px;
+  top: 320px;
+  right: calc(43vw - 90px);
+  opacity: 80%;
+  text-align: center;
+  cursor: pointer;
+  z-index: 6;
+}
+
+
+/* 오브젝트 대답 */
+.answer-whale1 {
+  position: absolute;
+  display: none;
+  background-color: #faffff;
+  border-radius: 10px;
+  width: calc(10vw + 100px);
+  height: 100px;
+  top: 100px;
+  right: calc(23vw - 90px);
+  opacity: 80%;
+  text-align: center;
+  z-index: 6;
+}
+.answer-whale2 {
+  position: absolute;
+  display: none;
+  background-color: #faffff;
+  border-radius: 10px;
+  width: calc(10vw + 100px);
+  height: 100px;
+  top: 100px;
+  right: calc(23vw - 90px);
+  opacity: 80%;
+  text-align: center;
+  z-index: 6;
+}
+
+
+
+/* 체크박스 효과 */
+#slide-btn1:checked ~ .location1-slide {
+  transform: translate(0vw);
+  background-color: #fff2fc;
+  transition: 3s;
+}
+#slide-btn2:checked ~ .location1-slide {
+  transform: translate(-200vw);
+  background-color: #ccffe1;
+  transition: 3s;
+}
+#slide-btn2-1:checked ~ .location1-slide {
+  transform: translate(-200vw);
+  background-color: #ccffe1;
+  transition: 3s;
+}
+#slide-btn2-2:checked ~ .location1-slide {
+  transform: translate(-200vw);
+  background-color: #ccffe1;
+  transition: 3s;
+}
+#slide-btn3:checked ~ .location1-slide {
+  transform: translate(-400vw);
+  background-color: #292b31;
+  transition: 3s;
+}
+#slide-btn4:checked ~ .location1-slide {
+  transform: translate(-600vw);
+  background-color: #fff2d6;
+  transition: 3.5s;
+}
+
+@keyframes arrowshow {
+  0% {
+    opacity: 0%;
+  }
+  80% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes arrowshow2 {
+  0% {
+    opacity: 0%;
+  }
+  80% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes answershow {
+  0% {
+    opacity: 0%;
+  }
+  80% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 80%;
+  }
+}
+@keyframes answerhide1 {
+  0% {
+    opacity: 80%;
+  }
+  60% {
+    left: calc(46vw - 30px);
+    opacity: 80%;
+  }
+  100% {
+    left: calc(46vw - 30px);
+    opacity: 0%;
+  }
+}
+#slide-btn1:checked ~ .location1-slide label {
+  animation: arrowshow 3.5s ease;
+}
+
+#slide-btn2:checked ~ .location1-slide .left {
+  animation: arrowshow2 3.5s ease;
+}
+#slide-btn2:checked ~ .location1-slide .right {
+  display: none;
+}
+#slide-btn2:checked ~ .location1-slide .answer-1 {
+  animation: answershow 5.5s ease;
+}
+#slide-btn2:checked ~ .location1-slide .answer-2 {
+  animation: answershow 5.5s ease;
+}
+
+#slide-btn2-1:checked ~ .location1-slide .answer-1 {
+  animation: answerhide1 4s ease;
+  transition-delay: 4s;
+  top: -300px;
+  opacity: 0;
+  cursor: default;
+}
+#slide-btn2-1:checked ~ .location1-slide .answer-whale1 {
+  animation: answershow 4s ease;
+  display: block;
+}
+
+#slide-btn2-1:checked ~ .location1-slide .location1-slide-killerwhale {
+  transition-delay: 5s;
+  left: 248vw;
+  bottom: -420px;
+}
+#slide-btn2-1:checked ~ .background-red {
+  animation: arrowshow 6.7s ease;
+  display: block;
+}
+#slide-btn2-1:checked ~ .location1-slide .answer-2 {
+  display: none;
+}
+#slide-btn2-1:checked ~ .location1-slide .left {
+  display: none;
+}
+#slide-btn2-1:checked ~ .location1-slide .right {
+  display: none;
+}
+
+
+#slide-btn3:checked ~ .location1-slide label {
+  animation: arrowshow 3.5s ease;
+}
+#slide-btn4:checked ~ .location1-slide label {
+  animation: arrowshow2 4s ease;
+}
+

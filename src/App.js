@@ -3,22 +3,34 @@ import './App.css';
 import penguinRight from'./img/penguin.png';
 import penguinLeft from'./img/penguinL.png';
 import penguinsound from './sound/penguin.mp3';
+import penguinanswer from './sound/penguinchirp.mp3';
 import penguinjoin from './sound/join.mp3';
 import bearsound from './sound/bear.mp3';
 import whalesound from './sound/whalesound.mp3';
+import whaleanswer from './sound/whaleanswer.mp3';
 import $ from 'jquery';
 
 let penguinR = penguinRight
 let penguinL = penguinLeft
 let penguinS = new Audio(penguinsound)
+let penguinA = new Audio(penguinanswer)
 let penguinJ = new Audio(penguinjoin)
 let bearS = new Audio(bearsound)
 let whaleS = new Audio(whalesound)
+let whaleA = new Audio(whaleanswer)
 
 export function runnerW(){
   setTimeout(function(){ 
     whaleS.play();
   }, 2600);
+};
+export function runnerWA(){
+  setTimeout(function(){ 
+    whaleA.play();
+  }, 3200);
+  setTimeout(function(){ 
+    window.location.reload();
+  }, 8000);
 };
 export function runnerB(){
   setTimeout(function(){ 
@@ -40,6 +52,9 @@ export function runnerR(){
   $('#location1-runnerL').hide();
   penguinS.play();
 };
+export function runnerA(){
+  penguinA.play();
+};
 
 
 
@@ -53,6 +68,8 @@ function App() {
 
         <input type='radio' name='location1-slide-radio' id='slide-btn1'></input>
         <input type='radio' name='location1-slide-radio' id='slide-btn2' onChange={runnerW}></input>
+        <input type='radio' name='location1-slide-radio' id='slide-btn2-1' onChange={runnerWA}></input>
+        <input type='radio' name='location1-slide-radio' id='slide-btn2-2' ></input>
         <input type='radio' name='location1-slide-radio' id='slide-btn3' onChange={runnerB}></input>
         <input type='radio' name='location1-slide-radio' id='slide-btn4' onChange={runnerJ}></input>
 
@@ -60,6 +77,8 @@ function App() {
           <img id='location1-runnerR' src={penguinR} width='200px' alt='penguin'/>
           <img id='location1-runnerL' src={penguinL} width='200px' alt='penguin' hidden/>
         </div>
+
+        <div className='background-red'></div>
         
         <div className='location1-slide-iceberg3'></div>
 
@@ -135,6 +154,15 @@ function App() {
 
           <div className='location1-slide2-box'>
             <label for='slide-btn1' className='left' onClick={runnerL} id="runner-rotateL"></label>
+
+            <label for='slide-btn2-1' className='answer-1' onClick={runnerA}>
+              <h4>get out of here you monster!</h4>
+            </label>
+            <label for='slide-btn2-2' className='answer-2' onClick={runnerA}>
+              <h4>you have pretty teeth</h4>
+            </label>
+            <div className='answer-whale1'><h5>I HATE YOU TOO</h5></div>
+            <div className='answer-whale2'><h6>your eyes are pretty too</h6></div>
             
             <label for='slide-btn3' className='right' onClick={runnerR} id="runner-rotateR"></label>
           </div>
