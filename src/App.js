@@ -67,9 +67,11 @@ function App() {
       <div className='location1-container'>
 
         <input type='radio' name='location1-slide-radio' id='slide-btn1'></input>
+        <input type='radio' name='location1-slide-radio' id='slide-btn1-2' ></input>
         <input type='radio' name='location1-slide-radio' id='slide-btn2' onChange={runnerW}></input>
         <input type='radio' name='location1-slide-radio' id='slide-btn2-1' onChange={runnerWA}></input>
         <input type='radio' name='location1-slide-radio' id='slide-btn2-2' ></input>
+        <input type='radio' name='location1-slide-radio' id='slide-btn2-3' ></input>
         <input type='radio' name='location1-slide-radio' id='slide-btn3' onChange={runnerB}></input>
         <input type='radio' name='location1-slide-radio' id='slide-btn4' onChange={runnerJ}></input>
 
@@ -150,25 +152,27 @@ function App() {
 
           <div className='location1-slide1-box'>
             <label for='slide-btn2' className='right' onClick={runnerR} id="runner-rotateR"></label>
+            <label for='slide-btn2-3' className='right-2' onClick={runnerR} id="runner-rotateR"></label>
           </div>
 
           <div className='location1-slide2-box'>
             <label for='slide-btn1' className='left' onClick={runnerL} id="runner-rotateL"></label>
 
-            <label for='slide-btn2-1' className='answer-1' onClick={runnerA} id="runner-answer">
-              <h4>get out of here you monster!</h4>
-            </label>
-            <label for='slide-btn2-2' className='answer-2' onClick={runnerA} id="runner-answer">
-              <h4>you have pretty teeth</h4>
-            </label>
+            <label for='slide-btn2-1' className='answer-1' onClick={runnerA} id="runner-answer"><h4>get out of here you monster!</h4></label>
+
+            <label for='slide-btn2-2' className='answer-2' onClick={runnerA} id="runner-answer"><h4>you have pretty teeth</h4></label>
+
             <div className='answer-whale1'><h5>I HATE YOU TOO</h5></div>
             <div className='answer-whale2'><h6>your eyes are pretty too</h6></div>
             
             <label for='slide-btn3' className='right' onClick={runnerR} id="runner-rotateR"></label>
+
+            <label for='slide-btn1-2' className='left-2' onClick={runnerL} id="runner-rotateL"></label>
+            <label for='slide-btn3' className='right-2' onClick={runnerR} id="runner-rotateR"></label>
           </div>
 
           <div className='location1-slide3-box'>
-            <label for='slide-btn2' className='left' onClick={runnerL} id="runner-rotateL"></label>
+            <label for='slide-btn2-3' className='left' onClick={runnerL} id="runner-rotateL"></label>
             
             <label for='slide-btn4' className='right' onClick={runnerR} id="runner-rotateR"></label>
           </div>
