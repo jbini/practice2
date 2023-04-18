@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/practice2/static/css/main.c3848f79.css",
-    "main.js": "/practice2/static/js/main.079dbba3.js",
+    "main.css": "/practice2/static/css/main.34150e8c.css",
+    "main.js": "/practice2/static/js/main.fbc64fa9.js",
     "static/js/787.3c56cd33.chunk.js": "/practice2/static/js/787.3c56cd33.chunk.js",
     "static/media/sun.png": "/practice2/static/media/sun.baee988dfcb58e4791bf.png",
     "static/media/polarbear.png": "/practice2/static/media/polarbear.9acf56ab8a50ec725b30.png",
@@ -13,6 +13,7 @@
     "static/media/killerwhale.png": "/practice2/static/media/killerwhale.3df34dbda527318fe028.png",
     "static/media/wave1.png": "/practice2/static/media/wave1.ed82ea7685e740d2ff0c.png",
     "static/media/whaleanswer.mp3": "/practice2/static/media/whaleanswer.6f9cc88cb3c24db9621a.mp3",
+    "static/media/bearanswer.mp3": "/practice2/static/media/bearanswer.cefc126dfc0ac9ec38a2.mp3",
     "static/media/seal.png": "/practice2/static/media/seal.57b874b23721ffea8aa3.png",
     "static/media/join.mp3": "/practice2/static/media/join.85207ac3e535b368645f.mp3",
     "static/media/bear.mp3": "/practice2/static/media/bear.588894f537e0d5ef80aa.mp3",
@@ -24,12 +25,12 @@
     "static/media/iceground1.png": "/practice2/static/media/iceground1.be7f40922bcf597ace0a.png",
     "static/media/penguin.mp3": "/practice2/static/media/penguin.74e2c2e2f966ba750988.mp3",
     "index.html": "/practice2/index.html",
-    "main.c3848f79.css.map": "/practice2/static/css/main.c3848f79.css.map",
-    "main.079dbba3.js.map": "/practice2/static/js/main.079dbba3.js.map",
+    "main.34150e8c.css.map": "/practice2/static/css/main.34150e8c.css.map",
+    "main.fbc64fa9.js.map": "/practice2/static/js/main.fbc64fa9.js.map",
     "787.3c56cd33.chunk.js.map": "/practice2/static/js/787.3c56cd33.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3848f79.css",
-    "static/js/main.079dbba3.js"
+    "static/css/main.34150e8c.css",
+    "static/js/main.fbc64fa9.js"
   ]
 }
