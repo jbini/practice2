@@ -739,6 +739,17 @@ h6 {
   left: 475vw;
   z-index: 4;
 }
+.location1-slide-polarbearattack {
+  position: absolute;
+  display: block;
+  background: url('img/polarbearattack.png') center center / 100% no-repeat;
+  width: 600px;
+  height: 600px;
+  bottom: 65px;
+  left: 470vw;
+  opacity: 0%;
+  z-index: 4;
+}
 .location1-slide-star1 {
   position: absolute;
   display: block;
@@ -1602,6 +1613,18 @@ h6 {
 #slide-btn3-3:checked ~ .location1-slide #runner-answer {
   display: none;
 }
+#slide-btn3-3:checked ~ .location1-slide .location1-slide-polarbear {
+  animation: polarbearhide 10s ease;
+}
+#slide-btn3-3:checked ~ .location1-slide .location1-slide-polarbearattack {
+  animation: polarbearshow 10s ease;
+}
+#slide-btn3-3:checked ~ .background-red {
+  animation: arrowshow 6.7s ease;
+  display: block;
+}
+
+
 
 
 #slide-btn3-4:checked ~ .location1-slide .answer-4 {
@@ -1661,6 +1684,7 @@ h6 {
 }
 
 
+/* 애니메이션 */
 @keyframes arrowshow {
   0% {
     opacity: 0%;
@@ -1718,5 +1742,39 @@ h6 {
   100% {
     right: calc(46vw - 30px);
     opacity: 0%;
+  }
+}
+@keyframes polarbearhide {
+  0% {
+    opacity: 100%;
+  }
+  49.9% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+@keyframes polarbearshow {
+  0% {
+    opacity: 0%;
+  }
+  49.9% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+    transform: translate(0vw);
+  }
+  65% {
+    opacity: 100%;
+    transform: translate(-27vw);
+  }
+  100% {
+    opacity: 100%;
+    transform: translate(-27vw);
   }
 }

@@ -42,7 +42,7 @@ export function runnerB(){
 export function runnerBA(){
   setTimeout(function(){ 
     bearA.play();
-  }, 3200);
+  }, 4500);
   setTimeout(function(){ 
     window.location.reload();
   }, 8000);
@@ -142,6 +142,7 @@ function App() {
           <div className='location1-slide-dolphin2'></div>
           <div className='location1-slide-dolphin3'></div>
           <div className='location1-slide-polarbear'></div>
+          <div className='location1-slide-polarbearattack'></div>
           <div className='location1-slide-star1' id='location1-slide-stars'></div>
           <div className='location1-slide-star2' id='location1-slide-stars'></div>
           <div className='location1-slide-star3' id='location1-slide-stars'></div>
