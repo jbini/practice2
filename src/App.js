@@ -42,7 +42,7 @@ export function runnerB(){
 export function runnerBA(){
   setTimeout(function(){ 
     bearA.play();
-  }, 4500);
+  }, 4400);
   setTimeout(function(){ 
     window.location.reload();
   }, 8000);
@@ -100,6 +100,7 @@ function App() {
         <div className='background-red'></div>
         
         <div className='location1-slide-iceberg3'></div>
+        <div className='location1-slide-iceberg13'></div>
 
         <div className='location1-slide'>
 
@@ -166,7 +167,10 @@ function App() {
           {/* 4페이지 장식 */}
           <div className='location1-slide-penguin2'></div>
           <div className='location1-slide-penguin3'></div>
-          <div className='location1-slide-iceberg7'></div>
+          <div className='location1-slide-iceberg11'></div>
+          <div className='location1-slide-iceberg12'></div>
+          <div className='location1-slide-greeting1'></div>
+          <div className='location1-slide-greeting2'></div>
 
           <div className='location1-slide1-box'>
             <label for='slide-btn2' className='right' onClick={runnerR} id="runner-rotateR"></label>
