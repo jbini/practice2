@@ -1178,6 +1178,14 @@ h6 {
   display: block;
   left: 10vw;
 }
+#slide-btn3-2:checked ~ .location1-slide-iceberg13 {
+  display: block;
+  transition: 3s;
+}
+#slide-btn3-4:checked ~ .location1-slide-iceberg13 {
+  display: block;
+  transition: 3s;
+}
 #slide-btn3-5:checked ~ .location1-slide-iceberg13 {
   display: block;
   transition: 3s;
